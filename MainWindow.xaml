@@ -1,0 +1,19 @@
+﻿<Window x:Class="LoginForm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginForm"
+        xmlns:pin="clr-namespace:LoginForm.UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid >
+  
+        <DockPanel x:Name="LoginView" Visibility="Visible">
+            <pin:LoginPage x:Name="loginPage" Width="Auto" Height="Auto"></pin:LoginPage>
+        </DockPanel>
+        <DockPanel x:Name="SignUpView" Visibility="Collapsed">
+            <pin:SignUpPage x:Name="SignUpPage" Width="Auto" Height="Auto"></pin:SignUpPage>
+        </DockPanel>
+    </Grid>
+</Window>
